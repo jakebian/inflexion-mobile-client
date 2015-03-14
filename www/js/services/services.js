@@ -1,5 +1,6 @@
 angular.module('services',
     [
-        'service.user'
+        'service.user',
+        'service.session'
     ]
 );
