@@ -2,7 +2,8 @@
   <ion-content>
     <div ng-controller="overviewCtrl">
         <ng-include src="'views/pages/overview/overview-header.html'"></ng-include>
-        <!-- {{user | json}} -->
+        <ng-include src="'views/pages/overview/overview-records.html'"></ng-include>
+        <sessions-viewer sessions="user.completedSessions"></sessions-viewer>
     </div>
   </ion-content>
 </ion-view>

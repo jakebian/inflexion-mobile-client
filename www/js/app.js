@@ -7,7 +7,8 @@
             'ionic',
             'global',
             'util',
-            'pages'
+            'pages',
+            'components'
         ]
     )
 
