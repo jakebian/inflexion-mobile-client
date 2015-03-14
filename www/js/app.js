@@ -1,13 +1,17 @@
 (function () {
 
+
+
     angular.module('inflexion',
         [
             'ionic',
             'global',
-            'util'
+            'util',
+            'pages'
         ]
     )
 
+    // init ionic
     .run([
                 '$ionicPlatform','IonicUtil',
         function($ionicPlatform, IonicUtil) {
@@ -15,13 +19,14 @@
         }
     ])
 
+
     .config([
-                '$injector','$stateProvider','$urlRouterProvider','ionicConfig',
-        function($injector , $stateProvider , $urlRouterProvider , ionicConfig) {
+                '$stateProvider','$urlRouterProvider','IonicConfig',
+        function($stateProvider , $urlRouterProvider , IonicConfig) {
 
             // routes
             $stateProvider
-                .state('page', ionicConfig.pageState)
+                .state('page', IonicConfig.pageState)
                 .state('page.overview', getPageState('overview'))
                 .state('page.activity', getPageState('activity'))
                 .state('page.progress', getPageState('progress'))
@@ -30,6 +35,9 @@
             // default route
             $urlRouterProvider.otherwise('/page/overview');
     }]);
+
+
+
 
     function getPageState(pageName) {
         var state = {

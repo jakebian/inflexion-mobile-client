@@ -4,11 +4,11 @@ angular.module('global', [])
     url: 'http://inflexion.jakebian.me'
 })
 
-.constant('currentUser', {
+.constant('CurrentUser', {
     id: '5501fa57269d43c23a28873f'
 })
 
-.constant('ionicConfig', {
+.constant('IonicConfig', {
     pageState:
         {
             url: '/page',
