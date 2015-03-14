@@ -1,11 +1,18 @@
-<div>
-    <div class="date-display">start: {{session.startTime | fromNow}}</div>
-    <div class="session-activities">
-        <div ng-repeat="activity in session.activities">
-            {{activity.name}} |
-            {{activity.quantity.value}} {{activity.quantity.units}} |
-            <!-- {{activity.createdAt | amCalendar}} -->
-        </div>
+<div class="session-summary">
+    <div class="session-date">
+        <date-display date="session.startTime"></date-display>
     </div>
-    <div class="date-display">end: {{session.endTime}}</div>
+    <div class="session-details">
+        <div class="start-time">start: {{session.startTime | timeOnly}}</div>
+        <div class="session-activities">
+            <div ng-repeat="activity in session.activities">
+                {{activity.name}} |
+                {{activity.quantity.value}} {{activity.quantity.units}} |
+            </div>
+        </div>
+        <div class="end-time">end: {{session.endTime | timeOnly}}</div>
+    </div>
+    <div class="session-details-trigger">
+        <a href="">stats</a>
+    </div>
 </div>
