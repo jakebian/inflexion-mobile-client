@@ -9,8 +9,8 @@ angular.module('overview.ctrl',
             ['$scope','UserService','CurrentUser',
     function ($scope , UserService , CurrentUser) {
         UserService.getUser(CurrentUser.id).success(setUser);
-        function setUser(result) {
-            $scope.user = result.data;
+        function setUser(user) {
+            $scope.user = user;
             console.log($scope.user);
         }
     }

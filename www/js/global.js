@@ -5,7 +5,7 @@ angular.module('global', [])
 })
 
 .constant('CurrentUser', {
-    id: '5501fa57269d43c23a28873f'
+    id: '5503b952ebbf85a30358ba06'
 })
 
 .constant('IonicConfig', {

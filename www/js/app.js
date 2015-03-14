@@ -60,7 +60,7 @@
     }
 
     function getPageTemplateUrl(pageName) {
-        return 'views/pages/'+ pageName + '.html';
+        return 'views/pages/'+ pageName + '/' + pageName + '.html';
     }
 
 })();
