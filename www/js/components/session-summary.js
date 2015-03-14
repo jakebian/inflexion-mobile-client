@@ -19,7 +19,6 @@ angular.module('component.session-summary',
                 SessionService.getSession(scope.session.id).success(setScopeSession);
 
                 function setScopeSession(session) {
-                    console.log(session)
                     scope.session = session;
                 }
             }

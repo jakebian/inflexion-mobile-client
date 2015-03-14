@@ -1,9 +1,11 @@
 <div>
-    <div class="date-display">{{session.date}}</div>
+    <div class="date-display">start: {{session.startTime | fromNow}}</div>
     <div class="session-activities">
         <div ng-repeat="activity in session.activities">
-            {{activity.name}}
-            {{activity.createdAt}}
+            {{activity.name}} |
+            {{activity.quantity.value}} {{activity.quantity.units}} |
+            <!-- {{activity.createdAt | amCalendar}} -->
         </div>
     </div>
+    <div class="date-display">end: {{session.endTime}}</div>
 </div>

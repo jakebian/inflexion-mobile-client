@@ -4,9 +4,10 @@
 
     angular.module('inflexion',
         [
-            'ionic',
+            'libs',
             'global',
             'util',
+            'filters',
             'pages',
             'components'
         ]
