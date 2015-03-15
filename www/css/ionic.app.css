@@ -7591,7 +7591,9 @@ a.button {
   transition-duration: 0s; }
 
 .date-display {
-  text-align: center; }
+  text-align: center;
+  max-width: 50px;
+  margin: 0; }
   .date-display > span {
     display: inline-block; }
   .date-display .date {
@@ -7603,3 +7605,36 @@ a.button {
   .date-display .day {
     opacity: 0.5;
     margin-top: 5px; }
+
+.session-display .session-content {
+  margin: 20px; }
+.session-display .session-activities {
+  padding-left: 10px; }
+  .session-display .session-activities .activity {
+    padding: 5px 0; }
+    .session-display .session-activities .activity .quantity {
+      opacity: 0.5; }
+.session-display .time-label {
+  opacity: 0.5; }
+.session-display .session-date .date-display {
+  margin-bottom: 15px; }
+.session-display .session-date a.stats-button i.icon {
+  font-size: 123em; }
+
+.overview-header {
+  padding: 20px 15px; }
+  .overview-header .user-avatar {
+    border-radius: 5px;
+    overflow: hidden;
+    float: left;
+    width: 120px;
+    height: 120px; }
+  .overview-header .user-info {
+    margin-left: 20px;
+    float: left;
+    margin-top: 30px; }
+    .overview-header .user-info .name {
+      font-size: 1.5em; }
+    .overview-header .user-info .stats-summary {
+      margin-top: 5px;
+      opacity: 0.5; }

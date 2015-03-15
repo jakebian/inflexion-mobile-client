@@ -1,5 +1,9 @@
-<div>
-    <img src="{{user.avatarUrl}}" alt="">
-    <div>{{user.name}}</div>
-    <div>{{user.states[0].weight}} lbs</div>
+<div class="overview-header row">
+    <div class="user-avatar">
+        <img src="{{user.avatarUrl}}" alt="">
+    </div>
+    <div class="user-info">
+        <div class="name">{{user.name}}</div>
+        <div class="stats-summary">{{user.states[0].weight}} lbs</div>
+    </div>
 </div>

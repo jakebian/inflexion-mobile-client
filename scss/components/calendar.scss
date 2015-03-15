@@ -1,8 +1,11 @@
 .date-display {
     text-align: center;
+    max-width: 50px;
+    margin: 0;
     >span {
         display: inline-block;
     }
+
     .date {
         font-size: 2.5em;
     }

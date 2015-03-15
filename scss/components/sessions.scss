@@ -1,0 +1,30 @@
+.session-display {
+    .session-content {
+        margin: 20px;
+    }
+    .session-activities {
+        padding-left: 10px;
+        .activity {
+            padding: 5px 0;
+
+            .quantity {
+                opacity: 0.5;
+            }
+        }
+    }
+
+    .time-label {
+        opacity: 0.5
+    }
+
+    .session-date {
+        .date-display{
+            margin-bottom: 15px;
+        }
+        a.stats-button {
+            i.icon {
+                font-size: 123em;
+            }
+        }
+    }
+}

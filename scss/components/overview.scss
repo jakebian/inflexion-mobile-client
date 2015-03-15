@@ -1,0 +1,22 @@
+.overview-header {
+    padding: 20px 15px;
+    .user-avatar {
+        border-radius: 5px;
+        overflow: hidden;
+        float: left;
+        width: 120px;
+        height: 120px;
+    }
+    .user-info {
+        margin-left: 20px;
+        float: left;
+        margin-top: 30px;
+        .name {
+            font-size: 1.5em;
+        }
+        .stats-summary {
+            margin-top: 5px;
+            opacity: 0.5;
+        }
+    }
+}
