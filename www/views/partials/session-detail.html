@@ -1,4 +1,5 @@
-<div class="session-summary row card">
+<h1>session details</h1>
+<div class="session-detail row card">
     <div class="session-date col-20">
         <date-display date="session.startTime"></date-display>
     </div>
@@ -12,11 +13,5 @@
             </div>
         </div>
         <div class="end-time">end: {{session.endTime | timeOnly}}</div>
-    </div>
-    <div class="session-details-trigger col-10">
-        <a href="/#/page/sessions/{{session.id}}" class="button button-outline button-positive">
-            <i class="icon ion-ios-pulse"></i>
-            stats
-        </a>
     </div>
 </div>

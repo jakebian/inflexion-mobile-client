@@ -1,7 +1,5 @@
 (function () {
 
-
-
     angular.module('inflexion',
         [
             'libs',
@@ -16,7 +14,7 @@
     // init ionic
     .run([
                 '$ionicPlatform','IonicUtil',
-        function($ionicPlatform, IonicUtil) {
+        function($ionicPlatform , IonicUtil) {
             $ionicPlatform.ready(IonicUtil.initIonic);
         }
     ])
@@ -33,11 +31,18 @@
                 .state('page.activity', getPageState('activity'))
                 .state('page.progress', getPageState('progress'))
                 .state('page.stats', getPageState('stats'))
+                .state('page.a', {
+                    url: '/sessions/:sessionId',
+                    views:{
+                        'page.stats': {
+                            templateUrl: getPageTemplateUrl('stats')
+                        }
+                    }
+                });
 
             // default route
             $urlRouterProvider.otherwise('/page/overview');
     }]);
-
 
 
 

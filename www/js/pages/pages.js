@@ -1,3 +1,5 @@
 angular.module('pages', [
-        'page.overview'
+        'page.overview',
+        'page.stats',
+        'page.activity'
     ]);

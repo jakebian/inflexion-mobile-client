@@ -1,0 +1,1 @@
+angular.module('page.activity', ['activity.ctrl']);

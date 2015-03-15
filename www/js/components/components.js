@@ -2,6 +2,8 @@ angular.module('components',
     [
         'component.session-summary',
         'component.sessions-viewer',
-        'component.date-display'
+        'component.date-display',
+        'component.session-detail',
+        'component.session-progress'
     ]
 );
