@@ -42,7 +42,8 @@
                 })
                 .state('login', {
                     url: '/login',
-                    templateUrl: 'views/pages/login/login.html'
+                    templateUrl: 'views/pages/login/login.html',
+                    controller: 'statsCtrl'
                 });
 
             // default route

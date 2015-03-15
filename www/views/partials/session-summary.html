@@ -1,10 +1,9 @@
 <div class="session-display session-summary">
     <div class="session-content row">
         <div class="session-date col">
-            <date-display ng-if="session.startTime" date="session.startTime">
-                <h1>transcluding</h1>
+            <date-display date="session.startTime">
             </date-display>
-            <a href="/#/sessions/{{session.id}}" class="stats-button button button-outline button-light">
+            <a href="#/sessions/{{session.id}}" class="stats-button button button-outline button-light">
                 <i class="icon ion-ios-pulse"></i>
             </a>
         </div>

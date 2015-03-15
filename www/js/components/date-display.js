@@ -6,7 +6,8 @@ angular.module('component.date-display', ['filter.time'])
             scope: {
                 date: '='
             },
-            templateUrl: '/views/partials/date-display.html',
+            restrict: 'E',
+            templateUrl: 'views/partials/date-display.html',
             link: link
         }
 

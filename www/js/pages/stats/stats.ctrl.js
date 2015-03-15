@@ -10,6 +10,7 @@ angular.module('stats.ctrl',
 
             ['$scope','$stateParams','SessionService','UserService',
     function ($scope , $stateParams , SessionService , UserService) {
+
         if ($stateParams.sessionId) {
             var sessionId = $stateParams.sessionId;
             SessionService.getSession(sessionId).success(setScopeSession);
