@@ -21,9 +21,9 @@
 
 
     .config([
-                '$stateProvider','$urlRouterProvider','IonicConfig',
-        function($stateProvider , $urlRouterProvider , IonicConfig) {
-
+                '$stateProvider','$urlRouterProvider','IonicConfig','$ionicConfigProvider',
+        function($stateProvider , $urlRouterProvider , IonicConfig , $ionicConfigProvider) {
+            $ionicConfigProvider.tabs.position('bottom');
             // routes
             $stateProvider
                 .state('page', IonicConfig.pageState)
