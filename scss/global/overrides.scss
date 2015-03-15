@@ -1,0 +1,16 @@
+.pane, .view {
+    background-color: #222;
+    color: #fff;
+}
+
+.card, .list-inset {
+  overflow: hidden;
+  margin: 20px 10px;
+  border-radius: 2px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+.tabs {
+    height: 70px;
+    padding-top: 10px;
+}

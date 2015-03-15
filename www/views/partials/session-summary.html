@@ -1,14 +1,14 @@
-<div class="session-display session-summary card">
+<div class="session-display session-summary">
     <div class="session-content row">
         <div class="session-date col">
             <date-display date="session.startTime"></date-display>
-            <a href="/#/page/sessions/{{session.id}}" class="stats-button button button-outline button-positive">
-                <i class="icon ion-ios-pulse"></i> <br>
-                stats
+            <a href="/#/page/sessions/{{session.id}}" class="stats-button button button-outline button-calm">
+                <i class="icon ion-ios-pulse"></i>
             </a>
         </div>
         <div class="session-details col-75">
-            <div class="time-label start-time">{{session.startTime | timeOnly}} start</div>
+            <div class="time-label start-time">
+            <i class="ion-flag"></i>{{session.startTime | timeOnly}} START</div>
             <div class="session-activities">
                 <div class="activity" ng-repeat="activity in session.activities">
                     <span class="name">
@@ -19,7 +19,10 @@
                     </span>
                 </div>
             </div>
-            <div class="time-label end-time">{{session.endTime | timeOnly}} end</div>
+            <div class="time-label end-time">
+                <i class="icon ion-flag"></i>
+                {{session.endTime | timeOnly}} END
+            </div>
         </div>
     </div>
 </div>
