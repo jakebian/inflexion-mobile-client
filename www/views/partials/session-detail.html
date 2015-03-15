@@ -1,17 +1,22 @@
-<h1>session details</h1>
-<div class="session-detail row card">
-    <div class="session-date col-20">
+<div class="session-detail">
+    <div class="session-date">
         <date-display date="session.startTime"></date-display>
     </div>
-    <div class="session-details col-70">
-        <div class="start-time">start: {{session.startTime | timeOnly}}</div>
-        <div class="session-activities list">
-            <div class="item" ng-repeat="activity in session.activities">
+    <div class="session-activities">
+        <div class="activity" ng-repeat="activity in session.activities">
+            <span class="name">
                 {{activity.name}}
-                <span class="muted">
-                {{activity.quantity.value}} {{activity.quantity.units}}</span>
-            </div>
+            </span>
+            <span class="quantity">
+                {{activity.quantity.value}} {{activity.quantity.units}}
+            </span>
         </div>
-        <div class="end-time">end: {{session.endTime | timeOnly}}</div>
+    </div>
+    <div class="session-stats row">
+        <div class=""><span class="icon ion-ios-pulse"></span></div>
+        <div class="stats-content">
+            <div class="stats-time">START: {{session.startTime | timeOnly}} | END: {{session.endTime | timeOnly}}</div>
+            <div class="stats-improvement"> 5% bench press strength improvement </div>
+        </div>
     </div>
 </div>

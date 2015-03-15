@@ -17,12 +17,13 @@ $dark:                            #444 !default;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
-@import "global/mixins.scss";
+@import "global/mixins";
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
-@import "components/calendar.scss";
-@import "components/sessions.scss";
-@import "components/overview.scss";
-@import "global/overrides.scss";
+@import "components/calendar";
+@import "components/sessions";
+@import "components/overview";
+@import "components/session-detail";
+@import "global/overrides";
