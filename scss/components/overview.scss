@@ -1,5 +1,11 @@
+body{
+    // background-image: url("../img/bg.jpg");
+    // background-attachment: fixed;
+}
 .overview-header {
     padding: 40px 15px;
+    padding-left: 50px;
+
     .user-avatar {
         border-radius: 5px;
         overflow: hidden;
@@ -19,4 +25,43 @@
             opacity: 0.5;
         }
     }
+}
+
+.overview-records {
+    background-color: rgba(0,0,0,0.1);
+    padding: 20px;
+    padding-top: 0;
+    .record {
+        padding: 15px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+        .record-date {
+            opacity: 0.5;
+            margin-right: 10px;
+        }
+        .record-quantity {
+            background-color: rgba(0, 0, 0, 0.1);
+            padding: 5px;
+            color: rgba(255, 255, 255, 0.8);
+            border-radius: 3px;
+            margin-left: 10px;
+            float: right;
+        }
+    }
+}
+
+.welcome-message {
+    margin-top: 20px;
+    padding: 40px;
+    .logo {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    .message {
+        font-weight: lighter;
+        font-size: 3em;
+        line-height: 1.5em;
+    }
+}
+.auth-buttons {
+  padding: 20px;
 }

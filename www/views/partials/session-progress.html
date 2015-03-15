@@ -1,7 +1,7 @@
-<div class="session-detail">
+<div class="session-detail session-progress">
     <div class="session-details col-70">
         <div class="session-activities detailed-activity-list">
-            <div class="activity" ng-repeat="activity in session.activities">
+            <div ng-class="{current: $first}" class="activity" ng-repeat="activity in session.activities">
                 <span class="name">
                     {{activity.name}}
                 </span>

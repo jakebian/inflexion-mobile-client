@@ -19,7 +19,7 @@ angular.module('filter.time', [])
 .filter('dateOnly',[
     function () {
         return function (time) {
-            return moment(time).format('MMM d');
+            return moment(time).format('MMM D');
         }
     }
 ])

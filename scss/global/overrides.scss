@@ -1,6 +1,8 @@
 .pane, .view {
     background-color: #333;
     color: #fff;
+    background-image: url("../img/bg.jpg");
+    background-attachment: fixed;
 }
 
 .card, .list-inset {
@@ -11,4 +13,6 @@
 }
 
 .tabs {
+    border: 0;
+    @include box-shadow(0 0 30px rgba(0,0,0,0.5))
 }

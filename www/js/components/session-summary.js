@@ -1,6 +1,7 @@
 angular.module('component.session-summary',
     [
-        'service.session'
+        'service.session',
+        'components'
     ]
 )
 

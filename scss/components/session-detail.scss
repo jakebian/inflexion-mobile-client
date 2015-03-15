@@ -1,7 +1,7 @@
 .session-detail {
     padding: 30px;
     .session-date {
-        border-bottom: 1px solid #555;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
         text-align: center;
         padding-bottom: 30px;
 
@@ -26,4 +26,10 @@
             }
         }
     }
+}
+
+sessions-viewer {
+    float:left;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
 }

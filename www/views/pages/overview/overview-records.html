@@ -1,6 +1,7 @@
-<div>
-    <div ng-repeat="(recordName, recordQuantity) in user.currentState.records">
+<div class="overview-records">
+    <div class="record" ng-repeat="(recordName, recordObject) in user.states[0].records">
+        <span class="record-date">{{recordObject.date | dateOnly}}</span>
         <span>{{recordName}}</span>
-        <span>{{recordQuantity.value}} {{recordQuantity.units}}</span>
+        <span class="record-quantity">{{recordObject.value}} {{recordObject.units}}</span>
     </div>
 </div>

@@ -31,17 +31,22 @@
                 .state('page.activity', getPageState('activity'))
                 .state('page.progress', getPageState('progress'))
                 .state('page.stats', getPageState('stats'))
-                .state('page.a', {
+
+                .state('session', {
                     url: '/sessions/:sessionId',
-                    views:{
-                        'page.stats': {
-                            templateUrl: getPageTemplateUrl('stats')
-                        }
-                    }
+                    templateUrl: getPageTemplateUrl('stats')
+                })
+                .state('welcome', {
+                    url: '/welcome',
+                    templateUrl: 'views/pages/welcome/welcome.html'
+                })
+                .state('login', {
+                    url: '/login',
+                    templateUrl: 'views/pages/login/login.html'
                 });
 
             // default route
-            $urlRouterProvider.otherwise('/page/overview');
+            $urlRouterProvider.otherwise('/welcome');
     }]);
 
 

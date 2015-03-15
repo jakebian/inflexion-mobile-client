@@ -1,8 +1,10 @@
 <ion-view view-title="Overview" hide-nav-bar="true">
   <ion-content>
     <div ng-controller="overviewCtrl">
-        <ng-include src="'views/pages/overview/overview-header.html'"></ng-include>
-        <ng-include src="'views/pages/overview/overview-records.html'"></ng-include>
+        <div class="overview-outer-header">
+            <ng-include src="'views/pages/overview/overview-header.html'"></ng-include>
+            <ng-include src="'views/pages/overview/overview-records.html'"></ng-include>
+        </div>
         <sessions-viewer sessions="user.completedSessions"></sessions-viewer>
     </div>
   </ion-content>
