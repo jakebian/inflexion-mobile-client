@@ -1,8 +1,12 @@
 <ion-view view-title="Progress">
   <ion-content>
-    <h1>This is progress page</h1>
     <div ng-controller="progressCtrl">
-
+        <div ng-repeat="state in states">
+            <div class="card">
+                <img src="{{state.pictureUrl}}">
+                <span>{{state.createdAt | dateOnly}}</span>
+            </div>
+        </div>
     </div>
   </ion-content>
 </ion-view>

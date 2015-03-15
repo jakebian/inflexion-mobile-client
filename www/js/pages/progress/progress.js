@@ -1,1 +1,1 @@
-progress.js
+angular.module('page.progress', ['progress.ctrl']);

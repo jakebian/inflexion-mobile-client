@@ -20,7 +20,7 @@ angular.module('service.user', ['global'])
 
         function setCurrentUser(result) {
             currentUser = result.data;
-            return getCurrentUserPromise();
+            return currentUser;
         }
 
         function getUser(id) {
@@ -29,11 +29,9 @@ angular.module('service.user', ['global'])
 
         // a fake promise
         function getCurrentUserPromise() {
-            return {
-                then: function (callback) {
-                    callback(currentUser);
-                }
-            }
+            var deferred = $q.defer();
+            deferred.resolve(currentUser);
+            return deferred.promise;
         }
     }
 ]);
