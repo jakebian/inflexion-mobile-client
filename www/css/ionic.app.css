@@ -7687,6 +7687,20 @@ a.button {
         border-radius: 3px;
         margin: 10px 0; }
 
+.progress-view .state {
+  padding: 20px; }
+  .progress-view .state .picture {
+    width: 130px;
+    height: 100px;
+    border-radius: 3px;
+    overflow: hidden; }
+  .progress-view .state .weight {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    padding: 5px; }
+  .progress-view .state .content {
+    margin-left: 35px; }
+
 .pane, .view {
   background-color: #333;
   color: #fff; }

@@ -1,10 +1,20 @@
 <ion-view view-title="Progress" hide-nav-bar="true">
   <ion-content>
-    <div ng-controller="progressCtrl">
+    <div ng-controller="progressCtrl" class="progress-view">
         <div ng-repeat="state in states">
-            <div class="card">
-                <img src="{{state.pictureUrl}}">
-                <span>{{state.createdAt | dateOnly}}</span>
+            <div class="card state">
+                <div class="row">
+                    <div class="picture">
+                        <img class="" src="{{state.pictureUrl}}">
+                    </div>
+                    <div class="content">
+                        <!--  -->
+
+                        <date-display date="state.createdAt"></date-display>
+                        <div class="weight">{{state.weight}} lbs </div>
+                    </div>
+                    <!-- <span>{{state.createdAt | dateOnly}}</span> -->
+                </div>
             </div>
         </div>
     </div>

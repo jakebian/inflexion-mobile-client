@@ -1,0 +1,20 @@
+.progress-view {
+    .state {
+        padding: 20px;
+        .picture {
+            width: 130px;
+            height: 100px;
+            border-radius: 3px;
+            overflow: hidden;
+        }
+        .weight {
+            background-color: rgba(0, 0, 0, 0.1);
+            border-radius: 3px;
+            padding: 5px;
+        }
+
+        .content {
+            margin-left: 35px;
+        }
+    }
+}
