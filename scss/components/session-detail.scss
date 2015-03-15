@@ -10,24 +10,6 @@
         }
     }
 
-    .session-activities {
-        .activity {
-            padding: 20px;
-            font-size: 1.2em;
-            font-weight: normal;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-
-            .quantity {
-                float:right;
-                padding: 5px 10px;
-                background-color: rgba(0, 0, 0, 0.1);
-                border-radius: 3px;
-                color: #888;
-                margin-left: 20px;
-            }
-        }
-    }
-
     .session-stats {
         background-color: rgba(0, 0, 0, 0.1);
         padding: 20px;

@@ -1,6 +1,14 @@
-<ion-view view-title="Activity" hide-nav-bar="true">
+<ion-view view-title="Current Workout">
   <ion-content>
     <div ng-controller="activityCtrl">
+        <div class="button-bar bar-light bar-subheader">
+            <a class="button">
+                <span class="ion-plus"></span>
+            </a>
+            <a class="button">
+                <span class="ion-folder"></span>
+            </a>
+        </div>
         <session-progress session="currentSession"></session-progress>
     </div>
   </ion-content>

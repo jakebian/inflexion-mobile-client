@@ -7635,6 +7635,19 @@ a.button {
   .session-display .session-date .date-display {
     margin-bottom: 15px; }
 
+.detailed-activity-list .activity {
+  padding: 20px 10px;
+  font-size: 1.2em;
+  font-weight: normal;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+  .detailed-activity-list .activity .quantity {
+    float: right;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 3px;
+    color: #888;
+    margin-left: 20px; }
+
 .overview-header {
   padding: 40px 15px; }
   .overview-header .user-avatar {
@@ -7661,18 +7674,6 @@ a.button {
     padding-bottom: 30px; }
     .session-detail .session-date .date-display {
       margin: auto; }
-  .session-detail .session-activities .activity {
-    padding: 20px;
-    font-size: 1.2em;
-    font-weight: normal;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
-    .session-detail .session-activities .activity .quantity {
-      float: right;
-      padding: 5px 10px;
-      background-color: rgba(0, 0, 0, 0.1);
-      border-radius: 3px;
-      color: #888;
-      margin-left: 20px; }
   .session-detail .session-stats {
     background-color: rgba(0, 0, 0, 0.1);
     padding: 20px; }
