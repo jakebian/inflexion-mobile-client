@@ -1,19 +1,18 @@
 .session-display {
-    border-top: 1px solid rgba( 255, 255, 255 ,0.01);
+    border-top: 1px solid rgba( 255, 255, 255 ,0.1);
     .session-content {
         margin: 20px;
     }
     .session-activities {
         padding-left: 25px;
         .activity {
-            padding: 8px 0;
+            padding: 3px 0;
 
             .quantity {
-                opacity: 0.8;
-                border: 1px solid #000;
-                padding: 3px 10px;
+                color: #555;
+                background-color: rgba(0, 0, 0, 0.1);
+                padding: 5px 10px;
                 border-radius: 5px;
-                color: #000;
                 float: right;
                 margin-right: 30px;
             }
@@ -23,13 +22,13 @@
     .time-label {
         &.start-time {
             i {
-                color: green;
+                color: #82DF4C;
             }
         }
 
         &.end-time {
             i {
-                color: red;
+                color: #DF5350;
             }
         }
 

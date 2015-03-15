@@ -7599,35 +7599,37 @@ a.button {
   .date-display .date {
     font-size: 2.5em; }
   .date-display .month {
-    border-top: 5px solid #11c1f3;
-    padding: 15px 10px;
-    font-size: 1.5em; }
+    color: #aaa;
+    font-weight: lighter;
+    border-top: 3px solid #82DF4C;
+    padding: 15px 20px;
+    font-size: 1.5em;
+    margin-left: -10px; }
   .date-display .day {
     opacity: 0.5;
     margin-top: 5px; }
 
 .session-display {
-  border-top: 1px solid rgba(255, 255, 255, 0.01); }
+  border-top: 1px solid rgba(255, 255, 255, 0.1); }
   .session-display .session-content {
     margin: 20px; }
   .session-display .session-activities {
     padding-left: 25px; }
     .session-display .session-activities .activity {
-      padding: 8px 0; }
+      padding: 3px 0; }
       .session-display .session-activities .activity .quantity {
-        opacity: 0.8;
-        border: 1px solid #000;
-        padding: 3px 10px;
+        color: #555;
+        background-color: rgba(0, 0, 0, 0.1);
+        padding: 5px 10px;
         border-radius: 5px;
-        color: #000;
         float: right;
         margin-right: 30px; }
   .session-display .time-label {
     color: #555; }
     .session-display .time-label.start-time i {
-      color: green; }
+      color: #82DF4C; }
     .session-display .time-label.end-time i {
-      color: red; }
+      color: #DF5350; }
     .session-display .time-label i {
       margin-right: 10px; }
   .session-display .session-date .date-display {
@@ -7652,7 +7654,7 @@ a.button {
       opacity: 0.5; }
 
 .pane, .view {
-  background-color: #222;
+  background-color: #333;
   color: #fff; }
 
 .card, .list-inset {
@@ -7663,4 +7665,9 @@ a.button {
 
 .tabs {
   height: 70px;
-  padding-top: 10px; }
+  padding-top: 10px;
+  background-color: #333333;
+  border: none;
+  color: #fff;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.7); }

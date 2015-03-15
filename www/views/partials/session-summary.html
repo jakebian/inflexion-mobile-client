@@ -2,7 +2,7 @@
     <div class="session-content row">
         <div class="session-date col">
             <date-display date="session.startTime"></date-display>
-            <a href="/#/page/sessions/{{session.id}}" class="stats-button button button-outline button-calm">
+            <a href="/#/page/sessions/{{session.id}}" class="stats-button button button-outline button-light">
                 <i class="icon ion-ios-pulse"></i>
             </a>
         </div>
@@ -10,12 +10,9 @@
             <div class="time-label start-time">
             <i class="ion-flag"></i>{{session.startTime | timeOnly}} START</div>
             <div class="session-activities">
-                <div class="activity" ng-repeat="activity in session.activities">
+                <div class="activity" ng-repeat="activity in session.activities | limitTo: 5">
                     <span class="name">
                         {{activity.name}}
-                    </span>
-                    <span class="quantity">
-                        {{activity.quantity.value}} {{activity.quantity.units}}
                     </span>
                 </div>
             </div>
